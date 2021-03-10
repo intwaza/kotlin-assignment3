@@ -1,7 +1,8 @@
 fun main(){
     school()
     Intro("Belyse",20)
-    size()
+    var word=size("codehive")
+    println(word)
     my_name("belyse")
     my_name("Belyse")
 }
@@ -14,12 +15,12 @@ fun school(){
 fun Intro(x:String,y:Int){
     println("Hi, my name is $x and I am $y years old")
 }
-fun size(){
-    var word="codehive"
-    println(word.length)
+fun size(word:String): Int {
+    var size= word.length
+    return size
 }
 fun my_name(name:String){
-    if(name=="Belyse"){
+    if(name =="Belyse"){
         println("that's me!")
     }
     else{
